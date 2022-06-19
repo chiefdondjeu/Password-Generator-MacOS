@@ -1,5 +1,5 @@
 //
-//  Generator_Wrapper.m
+//  Generator_Wrapper.mm
 //  Password Generator
 //
 //  Created by Florent Dondjeu Tschoufack on 6/19/22.
