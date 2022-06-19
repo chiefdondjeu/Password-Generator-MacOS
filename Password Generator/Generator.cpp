@@ -12,14 +12,17 @@
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
+#include <random>
 
 void Generator::generate_password(long int dashcount)
 {
-//    int dashcount = 3;
     std::string ch_list = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890";
     std::string temp = "";
-//    std::srand(std::time(nullptr));
-//    std::random_shuffle(ch_list.begin(), ch_list.end());
+    
+    std::srand((unsigned)std::time(nullptr));
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(ch_list.begin(), ch_list.end(), g);
     
     for(int i=0; i < 6*(dashcount+1); i++)
         temp = (i%6 == 0 && i != 0) ? (temp += "-") : (temp += ch_list[rand()%ch_list.length()]);
