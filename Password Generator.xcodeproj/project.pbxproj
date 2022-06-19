@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45E3F9D6285F7101002D3906 /* Password_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9D5285F7101002D3906 /* Password_GeneratorApp.swift */; };
 		45E3F9D8285F7101002D3906 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9D7285F7101002D3906 /* ContentView.swift */; };
 		45E3F9DA285F7102002D3906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E3F9D9285F7102002D3906 /* Assets.xcassets */; };
 		45E3F9DD285F7102002D3906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E3F9DC285F7102002D3906 /* Preview Assets.xcassets */; };
+		45E3F9E5285F722F002D3906 /* Password_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9E4285F722F002D3906 /* Password_GeneratorApp.swift */; };
+		45E3F9E9285F9091002D3906 /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9E7285F9091002D3906 /* Generator.cpp */; };
+		45E3F9EB285FA116002D3906 /* CPP_Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9EA285FA116002D3906 /* CPP_Wrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45E3F9D2285F7101002D3906 /* Password Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45E3F9D5285F7101002D3906 /* Password_GeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password_GeneratorApp.swift; sourceTree = "<group>"; };
 		45E3F9D7285F7101002D3906 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45E3F9D9285F7102002D3906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E3F9DC285F7102002D3906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45E3F9DE285F7102002D3906 /* Password_Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Password_Generator.entitlements; sourceTree = "<group>"; };
+		45E3F9E4285F722F002D3906 /* Password_GeneratorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Password_GeneratorApp.swift; path = ../../../.Trash/Password_GeneratorApp.swift; sourceTree = "<group>"; };
+		45E3F9E6285F9091002D3906 /* Password Generator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Password Generator-Bridging-Header.h"; sourceTree = "<group>"; };
+		45E3F9E7285F9091002D3906 /* Generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Generator.cpp; sourceTree = "<group>"; };
+		45E3F9E8285F9091002D3906 /* Generator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Generator.hpp; sourceTree = "<group>"; };
+		45E3F9EA285FA116002D3906 /* CPP_Wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CPP_Wrapper.mm; sourceTree = "<group>"; };
+		45E3F9EC285FA153002D3906 /* CPP_Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPP_Wrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +59,16 @@
 		45E3F9D4285F7101002D3906 /* Password Generator */ = {
 			isa = PBXGroup;
 			children = (
-				45E3F9D5285F7101002D3906 /* Password_GeneratorApp.swift */,
+				45E3F9E4285F722F002D3906 /* Password_GeneratorApp.swift */,
 				45E3F9D7285F7101002D3906 /* ContentView.swift */,
+				45E3F9EA285FA116002D3906 /* CPP_Wrapper.mm */,
+				45E3F9EC285FA153002D3906 /* CPP_Wrapper.h */,
+				45E3F9E7285F9091002D3906 /* Generator.cpp */,
+				45E3F9E8285F9091002D3906 /* Generator.hpp */,
 				45E3F9D9285F7102002D3906 /* Assets.xcassets */,
 				45E3F9DE285F7102002D3906 /* Password_Generator.entitlements */,
 				45E3F9DB285F7102002D3906 /* Preview Content */,
+				45E3F9E6285F9091002D3906 /* Password Generator-Bridging-Header.h */,
 			);
 			path = "Password Generator";
 			sourceTree = "<group>";
@@ -101,6 +113,7 @@
 				TargetAttributes = {
 					45E3F9D1285F7101002D3906 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -139,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E3F9E5285F722F002D3906 /* Password_GeneratorApp.swift in Sources */,
+				45E3F9EB285FA116002D3906 /* CPP_Wrapper.mm in Sources */,
 				45E3F9D8285F7101002D3906 /* ContentView.swift in Sources */,
-				45E3F9D6285F7101002D3906 /* Password_GeneratorApp.swift in Sources */,
+				45E3F9E9285F9091002D3906 /* Generator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Password Generator/Password_Generator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -283,6 +299,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chiefdondjeu.Password-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Password Generator/Password Generator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -292,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Password Generator/Password_Generator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -308,6 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chiefdondjeu.Password-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Password Generator/Password Generator-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
