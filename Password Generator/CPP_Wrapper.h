@@ -8,7 +8,5 @@
 #import <Foundation/Foundation.h>
 
 @interface CPP_Wrapper : NSObject
-
--(void) generate_password_wrapper:(NSInteger) dashcount;
-
+-(NSString*) generate_password_wrapper:(NSInteger) dashnumb;
 @end

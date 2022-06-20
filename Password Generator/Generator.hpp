@@ -5,7 +5,9 @@
 //  Created by Florent Dondjeu Tschoufack on 6/19/22.
 //
 
+#include<string>
+
 class Generator {
 public:
-    void generate_password(long int);
+    std::string generate_password(long int);
 };

@@ -8,13 +8,16 @@
 #import "CPP_Wrapper.h"
 #import "Generator.hpp"
 
-
 @implementation CPP_Wrapper
 
--(void) generate_password_wrapper:(NSInteger) dashcount
+-(NSString*) generate_password_wrapper:(NSInteger) dashnumb
 {
     Generator P;
-    P.generate_password(dashcount);
+    NSString* result = [NSString stringWithUTF8String:P.generate_password(dashnumb).c_str()];
+                    // convert std::string to NSString so its usable in swift
+//    NSLog(@"%@", result);
+    
+    return result;
 }
 
 @end
