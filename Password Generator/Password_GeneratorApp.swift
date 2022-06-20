@@ -16,7 +16,7 @@ struct Password_GeneratorApp: App {
                 SavesView()
             }
             .padding()
-            .frame(width: 400, height: 250)
+            .frame(width: 400, height: 260)
         }
     }
 }
