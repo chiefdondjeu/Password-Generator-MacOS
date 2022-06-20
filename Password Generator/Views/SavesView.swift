@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SavesView: View {
-    let passwords:[String] = ["ASrDtn-2huTH-fxzWa", "rSp93r-hMEd9-d7zA0", "F5oFHg-5Ls7i-yrBbt", "s3pW5O-JedEn-fG2r7"]
+    
+    let passwords:[String] = []
     
     var body: some View {
             List(self.passwords, id:\.self) { password in

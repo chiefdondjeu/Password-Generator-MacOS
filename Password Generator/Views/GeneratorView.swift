@@ -73,6 +73,7 @@ struct GeneratorView: View {
                         }
                         
                     }
+                    .disabled(true)
                 }
                     
             }

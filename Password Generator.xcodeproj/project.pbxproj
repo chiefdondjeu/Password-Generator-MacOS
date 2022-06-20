@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		459981C9286051F200E59F08 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459981C8286051F200E59F08 /* GeneratorView.swift */; };
 		459981CB2860525900E59F08 /* SavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459981CA2860525900E59F08 /* SavesView.swift */; };
+		45BC3A4F286080A0001FFDBA /* Swift.icns in Resources */ = {isa = PBXBuildFile; fileRef = 45BC3A4E286080A0001FFDBA /* Swift.icns */; };
 		45E3F9DA285F7102002D3906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E3F9D9285F7102002D3906 /* Assets.xcassets */; };
 		45E3F9DD285F7102002D3906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E3F9DC285F7102002D3906 /* Preview Assets.xcassets */; };
 		45E3F9E5285F722F002D3906 /* Password_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9E4285F722F002D3906 /* Password_GeneratorApp.swift */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		459981C8286051F200E59F08 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 		459981CA2860525900E59F08 /* SavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesView.swift; sourceTree = "<group>"; };
+		45BC3A4928607DFB001FFDBA /* Password-Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Password-Generator-Info.plist"; sourceTree = SOURCE_ROOT; };
+		45BC3A4E286080A0001FFDBA /* Swift.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Swift.icns; path = ../../../../../../.Trash/Swift.icns; sourceTree = "<group>"; };
 		45E3F9D2285F7101002D3906 /* Password Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E3F9D9285F7102002D3906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E3F9DC285F7102002D3906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -84,9 +87,11 @@
 				45E3F9E4285F722F002D3906 /* Password_GeneratorApp.swift */,
 				459981C7286051AC00E59F08 /* Views */,
 				459981CC286055AE00E59F08 /* Model */,
+				45E3F9E6285F9091002D3906 /* Password Generator-Bridging-Header.h */,
 				45E3F9D9285F7102002D3906 /* Assets.xcassets */,
 				45E3F9DE285F7102002D3906 /* Password_Generator.entitlements */,
-				45E3F9E6285F9091002D3906 /* Password Generator-Bridging-Header.h */,
+				45BC3A4928607DFB001FFDBA /* Password-Generator-Info.plist */,
+				45BC3A4E286080A0001FFDBA /* Swift.icns */,
 				45E3F9DB285F7102002D3906 /* Preview Content */,
 			);
 			path = "Password Generator";
@@ -159,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BC3A4F286080A0001FFDBA /* Swift.icns in Resources */,
 				45E3F9DD285F7102002D3906 /* Preview Assets.xcassets in Resources */,
 				45E3F9DA285F7102002D3906 /* Assets.xcassets in Resources */,
 			);
@@ -310,6 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Password Generator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Password-Generator-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +345,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Password Generator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Password-Generator-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
