@@ -55,12 +55,15 @@ struct GeneratorView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width:250)
                     .multilineTextAlignment(.center)
-//                    .disabled(true)
+                    .disabled(true)
                 
                 HStack {
                     Button("Copy") {
+                        // paste password to clipboard
                         if !password.isEmpty {
-                            // do something...
+                            let pasteBoard = NSPasteboard.general
+                            pasteBoard.clearContents()
+                            pasteBoard.writeObjects([self.password as NSString])
                         }
                     }
                     
