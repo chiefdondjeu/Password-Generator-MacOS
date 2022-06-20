@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45E3F9D8285F7101002D3906 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9D7285F7101002D3906 /* ContentView.swift */; };
+		459981C9286051F200E59F08 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459981C8286051F200E59F08 /* GeneratorView.swift */; };
+		459981CB2860525900E59F08 /* SavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459981CA2860525900E59F08 /* SavesView.swift */; };
 		45E3F9DA285F7102002D3906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E3F9D9285F7102002D3906 /* Assets.xcassets */; };
 		45E3F9DD285F7102002D3906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E3F9DC285F7102002D3906 /* Preview Assets.xcassets */; };
 		45E3F9E5285F722F002D3906 /* Password_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3F9E4285F722F002D3906 /* Password_GeneratorApp.swift */; };
@@ -16,8 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		459981C8286051F200E59F08 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
+		459981CA2860525900E59F08 /* SavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesView.swift; sourceTree = "<group>"; };
 		45E3F9D2285F7101002D3906 /* Password Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45E3F9D7285F7101002D3906 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45E3F9D9285F7102002D3906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E3F9DC285F7102002D3906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45E3F9DE285F7102002D3906 /* Password_Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Password_Generator.entitlements; sourceTree = "<group>"; };
@@ -40,6 +42,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		459981C7286051AC00E59F08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				459981C8286051F200E59F08 /* GeneratorView.swift */,
+				459981CA2860525900E59F08 /* SavesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		459981CC286055AE00E59F08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45E3F9EA285FA116002D3906 /* CPP_Wrapper.mm */,
+				45E3F9EC285FA153002D3906 /* CPP_Wrapper.h */,
+				45E3F9E7285F9091002D3906 /* Generator.cpp */,
+				45E3F9E8285F9091002D3906 /* Generator.hpp */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		45E3F9C9285F7101002D3906 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				45E3F9E4285F722F002D3906 /* Password_GeneratorApp.swift */,
-				45E3F9D7285F7101002D3906 /* ContentView.swift */,
-				45E3F9EA285FA116002D3906 /* CPP_Wrapper.mm */,
-				45E3F9EC285FA153002D3906 /* CPP_Wrapper.h */,
-				45E3F9E7285F9091002D3906 /* Generator.cpp */,
-				45E3F9E8285F9091002D3906 /* Generator.hpp */,
+				459981C7286051AC00E59F08 /* Views */,
+				459981CC286055AE00E59F08 /* Model */,
 				45E3F9D9285F7102002D3906 /* Assets.xcassets */,
 				45E3F9DE285F7102002D3906 /* Password_Generator.entitlements */,
-				45E3F9DB285F7102002D3906 /* Preview Content */,
 				45E3F9E6285F9091002D3906 /* Password Generator-Bridging-Header.h */,
+				45E3F9DB285F7102002D3906 /* Preview Content */,
 			);
 			path = "Password Generator";
 			sourceTree = "<group>";
@@ -154,7 +173,8 @@
 			files = (
 				45E3F9E5285F722F002D3906 /* Password_GeneratorApp.swift in Sources */,
 				45E3F9EB285FA116002D3906 /* CPP_Wrapper.mm in Sources */,
-				45E3F9D8285F7101002D3906 /* ContentView.swift in Sources */,
+				459981CB2860525900E59F08 /* SavesView.swift in Sources */,
+				459981C9286051F200E59F08 /* GeneratorView.swift in Sources */,
 				45E3F9E9285F9091002D3906 /* Generator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
