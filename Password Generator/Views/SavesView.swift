@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct SavesView: View {
-    
-    let passwords:[String] = []
-    
+    var mypasswords:[PasswordModel] = [
+        PasswordModel(value: "ClYGnW-U6z6l4-HpMzaH"),
+        PasswordModel(value: "UqTwnz-E9XYFe-1X72MT"),
+    ]
     var body: some View {
-            List(self.passwords, id:\.self) { password in
-                Text(password)
+            List(mypasswords) { password in
+                Text(password.value)
                     .frame(width:300)
             }
             .tabItem {
