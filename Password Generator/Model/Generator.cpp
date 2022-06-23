@@ -15,7 +15,7 @@
 
 std::string Generator::generate_password(long int dashnumb)
 {
-    int ch_per_dash = 6;
+    int ch_btw = 6; // number of characters better each dashes
     std::string ch_list = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890";
     std::string password = "";
     
@@ -24,9 +24,9 @@ std::string Generator::generate_password(long int dashnumb)
     std::mt19937 g(rd());
     std::shuffle(ch_list.begin(), ch_list.end(), g);
     
-    for(int i=0; i < ch_per_dash*(dashnumb+1); i++)
-        password = (i%6 == 0 && i != 0) ? (password += "-") : (password += ch_list[rand()%ch_list.length()]);
-//    std::cout << "From cpp: " << password << std::endl;
+    for(int i=1; i <= ch_btw*(dashnumb+1)+dashnumb; i++)
+        password = (i%(ch_btw+1) == 0) ? (password += "-") : (password += ch_list[rand()%ch_list.length()]);
+//    std::cout << "From cpp: " << password.length() << std::endl;
 
     return password;
 }
