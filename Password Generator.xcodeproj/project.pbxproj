@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45144F6F2864440900441AA3 /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45144F6B2864440900441AA3 /* Generator.cpp */; };
+		45144F702864440900441AA3 /* CPP_Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45144F6D2864440900441AA3 /* CPP_Wrapper.mm */; };
 		458217482860856F00524A2E /* Swift.icns in Resources */ = {isa = PBXBuildFile; fileRef = 458217472860856F00524A2E /* Swift.icns */; };
 		4582174A2860891000524A2E /* Password_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458217492860891000524A2E /* Password_GeneratorApp.swift */; };
 		459981C9286051F200E59F08 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459981C8286051F200E59F08 /* GeneratorView.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45144F6B2864440900441AA3 /* Generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Generator.cpp; sourceTree = "<group>"; };
+		45144F6C2864440900441AA3 /* CPP_Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPP_Wrapper.h; sourceTree = "<group>"; };
+		45144F6D2864440900441AA3 /* CPP_Wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CPP_Wrapper.mm; sourceTree = "<group>"; };
+		45144F6E2864440900441AA3 /* Generator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Generator.hpp; sourceTree = "<group>"; };
 		458217472860856F00524A2E /* Swift.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Swift.icns; sourceTree = "<group>"; };
 		458217492860891000524A2E /* Password_GeneratorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password_GeneratorApp.swift; sourceTree = "<group>"; };
 		459981C8286051F200E59F08 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
@@ -39,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45144F6A2864440900441AA3 /* cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				45144F6B2864440900441AA3 /* Generator.cpp */,
+				45144F6C2864440900441AA3 /* CPP_Wrapper.h */,
+				45144F6D2864440900441AA3 /* CPP_Wrapper.mm */,
+				45144F6E2864440900441AA3 /* Generator.hpp */,
+			);
+			name = cplusplus;
+			path = "Password Generator/cplusplus";
+			sourceTree = SOURCE_ROOT;
+		};
 		459981C7286051AC00E59F08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +87,7 @@
 			children = (
 				458217492860891000524A2E /* Password_GeneratorApp.swift */,
 				459981C7286051AC00E59F08 /* Views */,
+				45144F6A2864440900441AA3 /* cplusplus */,
 				45E3F9E6285F9091002D3906 /* Password Generator-Bridging-Header.h */,
 				45E3F9D9285F7102002D3906 /* Assets.xcassets */,
 				45E3F9DE285F7102002D3906 /* Password_Generator.entitlements */,
@@ -160,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				459981CB2860525900E59F08 /* SavesView.swift in Sources */,
+				45144F702864440900441AA3 /* CPP_Wrapper.mm in Sources */,
+				45144F6F2864440900441AA3 /* Generator.cpp in Sources */,
 				459981C9286051F200E59F08 /* GeneratorView.swift in Sources */,
 				4582174A2860891000524A2E /* Password_GeneratorApp.swift in Sources */,
 			);
@@ -303,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chiefdondjeu.Password-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -333,7 +354,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chiefdondjeu.Password-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
